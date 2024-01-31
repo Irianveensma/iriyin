@@ -1,19 +1,17 @@
+/*
+Theme Name: Pedicure Paulina
+Author: Your Name
+Description: Custom theme for Pedicure Paulina
+Version: 1.0
+*/
+
 /* Your existing styles remain unchanged */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
-}
-
-.container {
-    max-width: 1200px; /* Adjust the max-width as needed */
-    width: 100%;
-    padding: 0 20px;
 }
 
 header {
@@ -82,3 +80,12 @@ section {
         margin-bottom: 20px;
     }
 }
+
+footer {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Responsive styling remains unchanged */
