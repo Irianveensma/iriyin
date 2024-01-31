@@ -1,4 +1,58 @@
 body {
-  font: comic-sans;
-  background-color: #000000;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #{{randomColor()}};
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #{{randomColor()}};
+    color: #fff;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #{{randomColor()}};
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #{{randomColor()}};
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@function randomColor() {
+    $letters: "0123456789ABCDEF";
+    $color: "#";
+    @for $i from 1 through 6 {
+        $color: #{$color}#{nth($letters, floor(1 + random() * 16))};
+    }
+    @return $color;
 }
