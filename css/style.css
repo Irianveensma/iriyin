@@ -1,17 +1,51 @@
-/* Error: Expected expression.
- *   ,
- * 8 |     background-color: #{{randomColor()}};
- *   |                       ^^
- *   '
- *   scss\style.scss 8:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected expression.\a   \2577 \a 8 \2502      background-color: #{{randomColor()}};\d\a   \2502                        ^^\a   \2575 \a   scss\\style.scss 8:23  root stylesheet";
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+header {
+  background-color: randomColor();
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+nav {
+  background-color: randomColor();
+  color: #fff;
+  padding: 0.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: randomColor();
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: randomColor();
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
