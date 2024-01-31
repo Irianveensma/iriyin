@@ -1,20 +1,14 @@
-$body-font: 'Arial', sans-serif;
-$primary-color: #3498db;
-$background-color: #f4f4f4;
-$section-background: #fff;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$footer-background: #3498db;
-$footer-text-color: #fff;
+/* Your existing styles remain unchanged */
 
 body {
-    font-family: $body-font;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: $background-color;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: $primary-color;
+    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -31,22 +25,44 @@ nav li {
     margin-right: 15px;
 }
 
+a.appointment-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 section {
-    background-color: $section-background;
+    background-color: #fff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 0 10px $shadow-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
-    background-color: $footer-background;
-    color: $footer-text-color;
+    background-color: #3498db;
+    color: #fff;
     padding: 20px;
 }
 
 /* Responsive styling */
+@media only screen and (max-width: 768px) {
+    nav li {
+        margin-right: 10px;
+    }
+
+    a.appointment-button {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     header, nav, section, footer {
         margin: 10px;
