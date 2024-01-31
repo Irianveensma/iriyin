@@ -5,14 +5,14 @@ body {
 }
 
 header {
-    background-color: randomColor();
+    background-color: #3498db;  /* Example color */
     color: #fff;
     text-align: center;
     padding: 1em;
 }
 
 nav {
-    background-color: randomColor();
+    background-color: #2ecc71;  /* Example color */
     color: #fff;
     padding: 0.5em;
 }
@@ -33,26 +33,17 @@ main {
 }
 
 section {
-    background-color: randomColor();
+    background-color: #e74c3c;  /* Example color */
     padding: 15px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: randomColor();
+    background-color: #f39c12;  /* Example color */
     color: #fff;
     text-align: center;
     padding: 1em;
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-@function randomColor() {
-    $letters: "0123456789ABCDEF";
-    $color: "#";
-    @for $i from 1 through 6 {
-        $color: #{$color}#{nth($letters, floor(1 + random() * 16))};
-    }
-    @return $color;
 }
