@@ -5,14 +5,14 @@ body {
 }
 
 header {
-    background-color: #{{randomColor()}};
+    background-color: randomColor();
     color: #fff;
     text-align: center;
     padding: 1em;
 }
 
 nav {
-    background-color: #{{randomColor()}};
+    background-color: randomColor();
     color: #fff;
     padding: 0.5em;
 }
@@ -33,13 +33,13 @@ main {
 }
 
 section {
-    background-color: #{{randomColor()}};
+    background-color: randomColor();
     padding: 15px;
     margin-bottom: 20px;
 }
 
 footer {
-    background-color: #{{randomColor()}};
+    background-color: randomColor();
     color: #fff;
     text-align: center;
     padding: 1em;
