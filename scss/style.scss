@@ -1,20 +1,23 @@
+$body-font: 'Arial', sans-serif;
+$primary-color: #3498db;
+$background-color: #f4f4f4;
+$section-background: #fff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$footer-background: #3498db;
+$footer-text-color: #fff;
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: $body-font;
     margin: 0;
     padding: 0;
+    background-color: $background-color;
 }
 
 header {
-    background-color: #3498db;  /* Example color */
+    background-color: $primary-color;
     color: #fff;
     text-align: center;
-    padding: 1em;
-}
-
-nav {
-    background-color: #2ecc71;  /* Example color */
-    color: #fff;
-    padding: 0.5em;
+    padding: 20px;
 }
 
 nav ul {
@@ -25,25 +28,32 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 10px;
-}
-
-main {
-    padding: 20px;
+    margin-right: 15px;
 }
 
 section {
-    background-color: #e74c3c;  /* Example color */
-    padding: 15px;
-    margin-bottom: 20px;
+    background-color: $section-background;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px $shadow-color;
 }
 
 footer {
-    background-color: #f39c12;  /* Example color */
-    color: #fff;
     text-align: center;
-    padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: $footer-background;
+    color: $footer-text-color;
+    padding: 20px;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 600px) {
+    header, nav, section, footer {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
 }
